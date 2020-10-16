@@ -1,0 +1,175 @@
+/* color pallet
+0E1C36- Oxford Blue
+540D6E- Blue violet Wheel
+EE4266-Paradise Pink
+FFD23F-Sunglow
+3BCEAC-Caribean Green
+0EAD69-Green
+24B477-Mid sea green
+A1286A- Amaranth N P
+9DD076- Pistachio
+25BE8B- Mountain Meadow
+*/
+
+/* Global Styles
+----------------------------------------------------*/
+
+html{
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing:inherit;
+}
+body {
+    color: #540D6E;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+img {
+    width: 300px;
+}
+
+a {
+    color: #e1ee32;
+}
+
+a:hover{
+    text-decoration: none;
+}
+h1{
+    font-size: 100px;
+    line-height: 1;
+}
+h2{
+    font-size: 45px;
+}
+h1,h2{
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+.content-wrap{
+    max-width : 900px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+h3 {
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+.project-style h3 + h4{
+    margin: 0;
+}
+.divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+/* Profile
+----------------------------------------------------*/
+header {
+    background-color: #86ccaf;
+}
+
+
+/* Projects
+----------------------------------------------------*/
+.projects{
+    background: #a9b1b1; 
+}
+.projects a{
+    color: #e1ee32 ;
+}
+.projects .btn {
+    color: #a9b1b1;
+    background: #7d8673;
+    text-decoration: red solid;
+    padding: 5px;
+    border-radius: 4px;
+    display: inline-block;
+
+}
+
+.projects .btn:hover{
+    background :rgba(29, 13, 24, 0.8);
+}
+.project-items{
+    overflow: hidden;
+}
+
+/* Work Experience
+----------------------------------------------------*/
+
+.work-expe{
+    background: #a9b1b1;
+}
+
+/* Education
+----------------------------------------------------*/
+.education{
+    background: #a9b1b1;
+    background-image: url(../images/pencils.jpg);
+    background-size: cover;
+    background-position: top right;
+}
+.education p{
+    width: 60%;
+}
+/* contact
+----------------------------------------------------*/
+
+footer{
+    background-color: #24B477;
+}
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a{
+    padding: 15px;
+    display: inline-block;
+}
+
+/* Responsive
+----------------------------------------------------*/
+@media screen and (min-width:750px){
+    header, footer{
+        text-align: center;
+    }
+
+    .project-items img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .job-item{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:749px){
+    h1{
+        font-size: 65px;
+        line-height: 0.8;
+        margin-bottom: 20px;
+    }
+    h2{
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 2px;
+    }
+}
